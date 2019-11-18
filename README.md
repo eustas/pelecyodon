@@ -27,3 +27,7 @@ Step-by-step how-to:
  - switch to terminal window
  - press Control-Spacebar
  - close terminal window
+
+Second parameter for script is `ratio` - how much CPU should be allowed to be
+used by the target application. `0.2` work well for "Diablo 2" and
+"Knights of the Old Republic" on my MacBookPro 2018.
