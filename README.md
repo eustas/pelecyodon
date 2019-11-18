@@ -21,7 +21,7 @@ Just download script and run it in terminal.
 Step-by-step how-to:
  - download [pelecyodon.py](https://raw.githubusercontent.com/eustas/pelecyodon/master/pelecyodon.py) (once)
  - open terminal
- - type `python pelecyodon.py YourFavoriteGame 0.2` and press enter
+ - type `python ~/Downloads/pelecyodon.py YourFavoriteGame 0.2` and press enter
  - run the game
  - enjoy
  - switch to terminal window
