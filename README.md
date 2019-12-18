@@ -25,7 +25,7 @@ Step-by-step how-to:
  - run the game
  - enjoy
  - switch to terminal window
- - press Control-Spacebar
+ - press Control-C
  - close terminal window
 
 Second parameter for script is `ratio` - how much CPU should be allowed to be

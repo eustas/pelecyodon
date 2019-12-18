@@ -37,6 +37,7 @@ def main():
  target_ratio = 0.2
  # Script's own process ID
  self_pid = os.getpid()
+ me = sys.argv[0]
  num_args = len(sys.argv)
  # Check arguments.
  if num_args < 2 or num_args > 3:
@@ -62,7 +63,8 @@ def main():
   for line in stdout.splitlines():
    pid, cmdline = line.strip().split(' ', 1)
    # If the process name (command line) contains what we want...
-   if cmdline.find(target) >= 0:
+   # ... but that is not another instance of the same script...
+   if cmdline.find(target) >= 0 and cmdline.find(me) == -1:
     # ...we guess it is a target process...
     pid = int(pid)
     if pid != self_pid:
