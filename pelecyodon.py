@@ -40,15 +40,15 @@ def main():
  num_args = len(sys.argv)
  # Check arguments.
  if num_args < 2 or num_args > 3:
-  print("Usage: pelecyodon TARGET [PERCENT]")
+  print("Usage: pelecyodon TARGET [PERCENT]\n")
   sys.exit()
  target = sys.argv[1]
  if num_args == 3:
   target_ratio = int(sys.argv[2])
   if target_ratio < 1 or target_ratio > 99:
-   print("Invalid argument: PERCENT shall be in the in the range 1..99")
-   target_ratio = target_ratio / 100.0
+   print("Invalid argument: PERCENT shall be in the in the range 1..99\n")
    sys.exit()
+  target_ratio = target_ratio / 100.0
 
  # Repeat until terminated...
  while True:
@@ -60,7 +60,7 @@ def main():
   stdout, _ = process.communicate()
   # Iterate through the found processses.
   for line in stdout.splitlines():
-   pid, cmdline = line.split(' ', 1)
+   pid, cmdline = line.strip().split(' ', 1)
    # If the process name (command line) contains what we want...
    if cmdline.find(target) >= 0:
     # ...we guess it is a target process...
