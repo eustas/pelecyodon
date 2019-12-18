@@ -29,6 +29,6 @@ Step-by-step how-to:
  - close terminal window
 
 Second parameter for script is `ratio` - how much CPU should be allowed to be
-used by the target application. '0.15' is enough for "Darkest Dungeon",
+used by the target application. `0.15` is enough for "Darkest Dungeon",
 `0.2` works well for "Diablo 2" and "Knights of the Old Republic"
 on my MacBookPro 2018.
